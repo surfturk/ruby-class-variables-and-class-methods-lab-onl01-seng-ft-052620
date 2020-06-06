@@ -54,10 +54,9 @@ class Song
       
        
        if new_hash.key.include?(genre)
-         
-          key += 1
+          new_hash[genre] += 1
         else
-          new_hash << [key][value]
+          new_hash[genre] = 1
       
      
      
