@@ -50,10 +50,11 @@ class Song
  
  def self.genre_count 
    new_hash = {}
-    @@genres.map do |key, value| 
-       new_hash << [key][value]
+    @@genres.each do |genre| 
+      
        
-       if new_hash include?(key)
+       if new_hash.key.include?(genre)
+         
           key += 1
         else
           new_hash << [key][value]
