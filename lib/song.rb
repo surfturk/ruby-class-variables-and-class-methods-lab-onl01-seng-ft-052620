@@ -57,13 +57,10 @@ class Song
           new_hash[genre] += 1
         else
           new_hash[genre] = 1
+        end 
+      end
       
-     
-     
-     
-     
-    end 
-   end
+      new_hash
   end 
 
  
