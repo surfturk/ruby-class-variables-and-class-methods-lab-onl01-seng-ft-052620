@@ -53,7 +53,7 @@ class Song
     @@genres.each do |genre| 
       
        
-       if new_hash.key.include?(genre)
+       if new_hash.keys.include?(genre)
           new_hash[genre] += 1
         else
           new_hash[genre] = 1
