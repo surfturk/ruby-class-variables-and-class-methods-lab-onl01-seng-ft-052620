@@ -51,8 +51,6 @@ class Song
  def self.genre_count 
    new_hash = {}
     @@genres.each do |genre| 
-      
-       
        if new_hash.keys.include?(genre)
           new_hash[genre] += 1
         else
@@ -67,7 +65,13 @@ class Song
  def self.artist_count
    new_hash = {}
     @@artists.each do |artist|
-   
+      if new_hash.keys.include?(artist)
+         new_hash[artist] += 1
+       else
+         new_hash[artist] = 1
+        end 
+      end
+   new_hash
  end   
  
  
